@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te quiero - Anthony</title>
+    <link rel="stylesheet" href="estilos_principales.css">
+    <link rel="stylesheet" href="estilos_secundarios.css">
+</head>
+<body>
+    <h1 class="inicio">Mi Espacio</h1>
+    
+    <div class="menu">
+        <button class="menu-toggle" id="menuToggle">☰</button>
+        <ul id="menuUl">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="poemas.html">Escritos</a></li>
+            <li><a href="fotografias.html">Fotografías</a></li>
+            <li><a href="redes.html">Redes Sociales</a></li>
+            <li><a href="estudios.html">Mis Estudios</a></li>
+            <li><a href="hobbies.html">Mis Hobbies</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+        </ul>
+    </div>
+
+    <div class="contenido">
+        <!-- Botón para volver atrás -->
+        <div class="volver">
+            <a href="poemas.html" class="btn-volver">← Volver a los escritos</a>
+        </div>
+
+        <!-- Título del poema -->
+        <h1 class="titulo-poema">Te quiero</h1>
+        <p class="fecha-poema">Ecuador, 2026</p>
+
+        <!-- Poema completo -->
+        <div class="poema-completo">
+            <p>En mi vida te convertiste en mi sol. Llegaste a iluminar mis días, me das calor y amor,</p>
+            <p>Me regalaste momentos de felicidad, un lugar en donde me siento seguro.</p>
+            <br>
+            <p>Al ver tus ojos, me sacas una sonrisa por más triste que esté. Todas las noches, antes de</p>
+            <p>dormir, recuerdo tu sonrisa. Aquella que me enamoró. La misma que quiero tener a mi lado</p>
+            <p>todos los días.</p>
+            <br>
+            <p>Eres hermosa, increíble, inteligente, con un gran carisma que cada día me enamora más.</p>
+            <br>
+            <p>Espero que estas pequeñas palabras, que me han brotado de mi corazón,</p>
+            <p>puedan describir un poco de lo que siento por ti.</p>
+            <br>
+            <p>— Anthony. S</p>
+        </div>
+
+        <!-- Separador bonito -->
+        <hr class="separador-poema">
+
+        <!-- Navegación entre poemas (opcional) -->
+        <div class="navegacion-poemas">
+            <a href="el-amor-de-mi-vida.html" class="nav-anterior">← Anterior</a>
+            <a href="poemas.html" class="nav-todos">Todos los poemas</a>
+            <a href="facil.html" class="nav-siguiente">Siguiente →</a>
+        </div>
+    </div>
+
+    <footer class="inicio">
+        <p>© 2026 Anthony Simbaña. Todos los derechos reservados.</p>
+    </footer>
+</body>
+<script>
+    // Menú hamburguesa para móvil
+    const toggle = document.querySelector('.menu-toggle');
+    const menuUl = document.querySelector('.menu ul');
+    
+    if (toggle) {
+        toggle.addEventListener('click', function() {
+            menuUl.classList.toggle('mostrar');
+        });
+    }
+</script>
+</html>

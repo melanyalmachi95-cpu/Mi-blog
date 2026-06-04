@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sol - Anthony</title>
+    <link rel="stylesheet" href="estilos_principales.css">
+    <link rel="stylesheet" href="estilos_secundarios.css">
+</head>
+<body>
+    <h1 class="inicio">Mi Espacio</h1>
+    
+    <div class="menu">
+        <button class="menu-toggle" id="menuToggle">☰</button>
+        <ul id="menuUl">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="poemas.html">Escritos</a></li>
+            <li><a href="fotografias.html">Fotografías</a></li>
+            <li><a href="redes.html">Redes Sociales</a></li>
+            <li><a href="estudios.html">Mis Estudios</a></li>
+            <li><a href="hobbies.html">Mis Hobbies</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+        </ul>
+    </div>
+
+    <div class="contenido">
+        <!-- Botón para volver atrás -->
+        <div class="volver">
+            <a href="poemas.html" class="btn-volver">← Volver a los escritos</a>
+        </div>
+
+        <!-- Título del poema -->
+        <h1 class="titulo-poema">Mi Sol</h1>
+        <p class="fecha-poema">Ecuador, 2026</p>
+
+        <!-- Poema completo -->
+        <div class="poema-completo">
+            <p>Tus ojos son un sol, el que ilumina mi vida, hermosa mujer</p>
+            <p>esculpida con petalos de rosas y adornada con zafiros y piedras preciosas,</p>
+            <p>al tocar tus suabes manos me recuerdan a finas telas de seda</p>
+            <p>con una calidez igual al rayo de sol que me despierta cada mañana.</p>
+            <br>
+            <p>— Anthony. S</p>
+        </div>
+
+        <!-- Separador bonito -->
+        <hr class="separador-poema">
+
+        <!-- Navegación entre poemas (opcional) -->
+        <div class="navegacion-poemas">
+            <a href="esta-noche.html" class="nav-anterior">← Anterior</a>
+            <a href="poemas.html" class="nav-todos">Todos los poemas</a>
+            <a href="escrito1.html" class="nav-siguiente">Siguiente →</a>
+        </div>
+    </div>
+
+    <footer class="inicio">
+        <p>© 2026 Anthony Simbaña. Todos los derechos reservados.</p>
+    </footer>
+</body>
+<script>
+    // Menú hamburguesa para móvil
+    const toggle = document.querySelector('.menu-toggle');
+    const menuUl = document.querySelector('.menu ul');
+    
+    if (toggle) {
+        toggle.addEventListener('click', function() {
+            menuUl.classList.toggle('mostrar');
+        });
+    }
+</script>
+</html>

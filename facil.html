@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facil - Anthony</title>
+    <link rel="stylesheet" href="estilos_principales.css">
+    <link rel="stylesheet" href="estilos_secundarios.css">
+</head>
+<body>
+    <h1 class="inicio">Mi Espacio</h1>
+    
+    <div class="menu">
+        <button class="menu-toggle" id="menuToggle">☰</button>
+        <ul id="menuUl">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="poemas.html">Escritos</a></li>
+            <li><a href="fotografias.html">Fotografías</a></li>
+            <li><a href="redes.html">Redes Sociales</a></li>
+            <li><a href="estudios.html">Mis Estudios</a></li>
+            <li><a href="hobbies.html">Mis Hobbies</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+        </ul>
+    </div>
+
+    <div class="contenido">
+        <!-- Botón para volver atrás -->
+        <div class="volver">
+            <a href="poemas.html" class="btn-volver">← Volver a los escritos</a>
+        </div>
+
+        <!-- Título del poema -->
+        <h1 class="titulo-poema">Facil</h1>
+        <p class="fecha-poema">Ecuador, 2026</p>
+
+        <!-- Poema completo -->
+        <div class="poema-completo">
+            <p>¿Qué es facil? la vida es facil</p>
+            <p>acaso el amor es facil</p>
+            <p>lo unico que se, es que nada es facil</p>
+            <p>amarte no es facil</p>
+            <p>decirte lo mucho que te amo no es facil</p>
+            <p>¿Por qué? es tan dificil</p>
+            <p>acaso el amor es mas dificil</p>
+            <p>si de por si amarte es complicado</p>
+            <p>es aun mas cuando no nos amamos igual</p>
+            <p>mi amor no es suficiente</p>
+            <p>o acaso soy yo, o mi forma de ser</p>
+            <p>mi forma de amar y de sentir</p>
+            <p>porque es tan facil creer en el amor</p>
+            <p>pero tan dificil tenerlo.</p>
+            <br>
+            <p>"Porque nada es facil"</p>
+            <br>
+            <p>— Anthony. S</p>
+        </div>
+
+        <!-- Separador bonito -->
+        <hr class="separador-poema">
+
+        <!-- Navegación entre poemas (opcional) -->
+        <div class="navegacion-poemas">
+            <a href="No-se.html" class="nav-anterior">← Anterior</a>
+            <a href="poemas.html" class="nav-todos">Todos los poemas</a>
+            <a href="esta-noche.html" class="nav-siguiente">Siguiente →</a>
+        </div>
+    </div>
+
+    <footer class="inicio">
+        <p>© 2026 Anthony Simbaña. Todos los derechos reservados.</p>
+    </footer>
+</body>
+<script>
+    // Menú hamburguesa para móvil
+    const toggle = document.querySelector('.menu-toggle');
+    const menuUl = document.querySelector('.menu ul');
+    
+    if (toggle) {
+        toggle.addEventListener('click', function() {
+            menuUl.classList.toggle('mostrar');
+        });
+    }
+</script>
+</html>

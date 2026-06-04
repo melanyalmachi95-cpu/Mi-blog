@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te quiero - Anthony</title>
+    <link rel="stylesheet" href="estilos_principales.css">
+    <link rel="stylesheet" href="estilos_secundarios.css">
+</head>
+<body>
+    <h1 class="inicio">Mi Espacio</h1>
+    
+    <div class="menu">
+        <button class="menu-toggle" id="menuToggle">☰</button>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="poemas.html">Escritos</a></li>
+            <li><a href="fotografias.html">Fotografías</a></li>
+            <li><a href="redes.html">Redes Sociales</a></li>
+            <li><a href="estudios.html">Mis Estudios</a></li>
+            <li><a href="hobbies.html">Mis Hobbies</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+        </ul>
+    </div>
+
+    <div class="contenido">
+        <!-- Botón para volver atrás -->
+        <div class="volver">
+            <a href="poemas.html" class="btn-volver">← Volver a los escritos</a>
+        </div>
+
+        <!-- Título del poema -->
+        <h1 class="titulo-poema">Te quiero</h1>
+        <p class="fecha-poema">Ecuador, 2026</p>
+
+        <!-- Poema completo -->
+        <div class="poema-completo">
+            <p>Eres lo que más quiero en mi vida</p>
+            <p>Quiero tener tu sonrisa</p>
+            <p>verte sonreír</p>
+            <p>ser el dueño de tus alegrías.</p>
+            <br>
+            <p>Quiero tenerte a mi lado</p>
+            <p>solo te quiero a ti.</p>
+            <p>Quiero besarte, quiero abrazarte</p>
+            <p>quiero tenerte en mi vida.</p>
+            <br>
+            <p>No quiero a nadie más.</p>
+            <br>
+            <p>— Anthony. S</p>
+        </div>
+
+        <!-- Separador bonito -->
+        <hr class="separador-poema">
+
+        <!-- Navegación entre poemas (opcional) -->
+        <div class="navegacion-poemas">
+            <a href="el-amor-de-mi-vida.html" class="nav-anterior">← Anterior</a>
+            <a href="poemas.html" class="nav-todos">Todos los poemas</a>
+            <a href="facil.html" class="nav-siguiente">Siguiente →</a>
+        </div>
+    </div>
+
+    <footer class="inicio">
+        <p>© 2026 Anthony Simbaña. Todos los derechos reservados.</p>
+    </footer>
+</body>
+<script>
+    // Menú hamburguesa para móvil
+    const toggle = document.querySelector('.menu-toggle');
+    const menuUl = document.querySelector('.menu ul');
+    
+    if (toggle) {
+        toggle.addEventListener('click', function() {
+            menuUl.classList.toggle('mostrar');
+        });
+    }
+</script>
+</html>
