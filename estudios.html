@@ -1,36 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Espacio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Mis Estudios - Anthony</title>
     <link rel="stylesheet" href="estilos_principales.css">
-    <link rel="stylesheet" href="index.html ">
-    <link rel="stylesheet" href="estilos_secundarios.css">
+    <link rel="stylesheet" href="estilos_principales.css">
 </head>
 <body>
     <h1 class="inicio">Mis Estudios</h1>
-    <div class = "menu">
+    
+    <div class="menu">
         <button class="menu-toggle" id="menuToggle">☰</button>
         <ul id="menuUl">
-            <li> <a href="index.html">Inicio</a></li>
-            <li> <a href="fotografias.html">Fotografias</a></li>
-            <li> <a href="redes.html">Redes Sociales</a></li>
-            <li> <a href="poemas.html">Poemas</a></li>
-            <li> <a href="hobbies.html">Mis Hobbies</a></li>
-            <li> <a href="proyectos.html">Proyectos</a></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="poemas.html">Escritos</a></li>
+            <li><a href="fotografias.html">Fotografías</a></li>
+            <li><a href="redes.html">Redes Sociales</a></li>
+            <li><a href="estudios.html">Mis Estudios</a></li>
+            <li><a href="hobbies.html">Mis Hobbies</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
         </ul>
     </div>
+
+    <div class="contenido">
+        <!-- Encabezado (ahora sin azul, usando tus colores) -->
+        <div class="academic-header">
+            <h2>Mi viaje académico</h2>
+            <p>"El conocimiento es la llave que abre todas las puertas"</p>
+        </div>
+
+        <!-- Metas actuales (lo que sí estás haciendo) -->
+        <h2 class="secciones">Mis metas actuales</h2>
+        <div class="goals-grid">
+            <div class="goal-card">
+                <div class="goal-icon"><img src="imagenes/prepara.webp" alt="preparacion" class="imagen1"></div>
+                <h3>Preparación universitaria</h3>
+                <p>Fortalecer mis conocimientos en matemáticas, física y programación</p>
+            </div>
+            <div class="goal-card">
+                <div class="goal-icon"><img src="imagenes/idiomas.webp" alt="idiomas" class="imagen1"></div>
+                <h3>Aprender idiomas</h3>
+                <p>Ruso, inglés y más. Cada idioma es una nueva ventana al mundo</p>
+            </div>
+            <div class="goal-card">
+                <div class="goal-icon"><img src="imagenes/pro.webp" alt="software" class="imagen1"></div>
+                <h3>Desarrollo de software</h3>
+                <p>Mejorar mis habilidades en programación y tecnología</p>
+            </div>
+        </div>
+
+        <!-- Mi ruta actual -->
+        <h2 class="secciones">⏳ Mi camino hasta ahora</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-icon">📚</div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2024 - Actualidad</div>
+                    <h3>Estudio autodidacta</h3>
+                    <p>Programación, inglés y preparación para la universidad</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-icon">🌐</div>
+                <div class="timeline-content">
+                    <div class="timeline-date">En proceso</div>
+                    <h3>Aprendiendo ruso</h3>
+                    <p>Preparándome para postular a universidades en Rusia</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-icon">🎓</div>
+                <div class="timeline-content">
+                    <div class="timeline-date">Próximamente</div>
+                    <h3>Universidad en Rusia</h3>
+                    <p>Mi meta principal, trabajaré duro para lograrlo</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Visión a futuro (sueños, no realidades) -->
+        <h2 class="secciones">Visión a futuro (mis sueños)</h2>
+        <div class="future-vision">
+            <p style="color: #6B6B6B; margin-bottom: 5px;"></p>Esto es lo que me motiva a seguir adelante</p>
+            <div class="future-items">
+                <div class="future-item">
+                    <div class="future-icon">🇷🇺</div>
+                    <h4>Rusia</h4>
+                    <p>Universidad</p>
+                    <div class="sueño">Un sueño que voy a cumplir</div>
+                </div>
+                <div class="future-item">
+                    <div class="future-icon">🇯🇵</div>
+                    <h4>Japón</h4>
+                    <p>Maestría</p>
+                    <div class="sueño">Un día, si la vida lo permite</div>
+                </div>
+                <div class="future-item">
+                    <div class="future-icon"><img src="imagenes/mundo.webp" alt="mundo"></div>
+                    <h4>El mundo</h4>
+                    <p>Seguir aprendiendo</p>
+                    <div class="sueño">Nunca dejar de crecer</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Idiomas (lo que estás aprendiendo) -->
+        <h2 class="secciones">Idiomas</h2>
+        <div class="languages">
+            <span class="lang">🇪🇸 Español (Nativo)</span>
+            <span class="lang">🇺🇸 Inglés (Básico)</span>
+            <span class="lang">🇷🇺 Ruso (Aprendiendo)</span>
+            <span class="lang">🇯🇵 Japonés (Empezando)</span>
+            <span class="lang">🇩🇪 Alemán (Quiero aprender)</span>
+            <span class="lang">🇨🇳 Chino (En mis planes)</span>
+        </div>
+
+        <!-- Curso destacado con barra de progreso -->
+        <h2 class="secciones">Curso destacado</h2>
+        <div class="featured-course">
+            <h3><img src="imagenes/py.webp" alt="logo_python" class="imagen"> Python desde cero</h3>
+            <p>Fundamentos de programación para mis proyectos y la universidad</p>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+            <p style="font-size: 0.75rem; color: #8A8A8A;">100% completado - ¡Sigo avanzando!</p>
+        </div>
+    </div>
+
+    <footer class="inicio">
+        <p>© 2026 Anthony Simbaña. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Menú hamburguesa
+        const menuToggle = document.getElementById('menuToggle');
+        const menuUl = document.getElementById('menuUl');
+        
+        if (menuToggle && menuUl) {
+            menuToggle.addEventListener('click', function() {
+                menuUl.classList.toggle('mostrar');
+            });
+        }
+    </script>
 </body>
-<script>
-    // Menú hamburguesa para móvil
-    const toggle = document.querySelector('.menu-toggle');
-    const menuUl = document.querySelector('.menu ul');
-    
-    if (toggle) {
-        toggle.addEventListener('click', function() {
-            menuUl.classList.toggle('mostrar');
-        });
-    }
-</script>
 </html>
