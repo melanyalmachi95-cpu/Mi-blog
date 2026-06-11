@@ -201,7 +201,7 @@ hr {
     background-color: #FEF9F0;
     border-radius: 16px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-    border-left: 3px solid #c28f74;
+    /*border-left: 3px solid #c28f74;*/
     transition: transform 0.2s ease;
     text-align: center;     /* Centra el título e imagen */
 }
@@ -1340,5 +1340,364 @@ hr {
             
             .future-item {
                 min-width: auto;
+            }
+        }
+/* ===== MODAL / PANTALLA EMERGENTE ===== */
+
+/* Fondo oscuro detrás del modal */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 10000;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.modal-overlay.mostrar {
+    display: flex;
+}
+
+/* Contenedor del contenido emergente */
+.modal-contenido {
+    background-color: #FEF9F0;
+    border-radius: 24px;
+    max-width: 500px;
+    width: 90%;
+    max-height: 85vh;
+    overflow-y: auto;
+    position: relative;
+    cursor: default;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    animation: modalEntrada 0.3s ease;
+}
+
+@keyframes modalEntrada {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Botón de cerrar */
+.modal-cerrar {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #4A6FA5;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    z-index: 10;
+    background: none;
+    border: none;
+}
+
+.modal-cerrar:hover {
+    color: #c28f74;
+    transform: scale(1.1);
+}
+
+/* Cabecera del modal */
+.modal-header {
+    padding: 25px 25px 10px 25px;
+    border-bottom: 2px solid #E6DFD3;
+}
+
+.modal-header h2 {
+    margin: 0;
+    color: #4A6FA5;
+}
+
+.modal-header .ubicacion {
+    color: #8A8A8A;
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+/* Cuerpo del modal */
+.modal-body {
+    padding: 20px 25px;
+}
+
+.modal-body img {
+    width: 100%;
+    border-radius: 16px;
+    margin: 10px 0;
+}
+
+.modal-body .fecha {
+    color: #8A8A8A;
+    font-size: 0.75rem;
+    margin-top: 10px;
+    text-align: right;
+}
+
+/* Pie del modal */
+.modal-footer {
+    padding: 15px 25px;
+    border-top: 1px solid #E6DFD3;
+    text-align: right;
+}
+
+.modal-footer button {
+    background-color: #4A6FA5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.modal-footer button:hover {
+    background-color: #c28f74;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .modal-contenido {
+        width: 95%;
+        border-radius: 20px;
+    }
+    
+    .modal-header {
+        padding: 20px 20px 8px 20px;
+    }
+    
+    .modal-body {
+        padding: 15px 20px;
+    }
+    
+    .modal-cerrar {
+        top: 10px;
+        right: 15px;
+        font-size: 28px;
+    }
+}
+
+/* ===== LIGHTBOX SIMPLE ===== */
+
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.lightbox.mostrar {
+    display: flex;
+}
+
+.lightbox-img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    border-radius: 8px;
+    cursor: default;
+}
+
+.lightbox-cerrar {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+    z-index: 10000;
+}
+
+.lightbox-cerrar:hover {
+    color: #D4A58C;
+    transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+    .lightbox-cerrar {
+        top: 10px;
+        right: 20px;
+        font-size: 32px;
+    }
+    
+    .lightbox-img {
+        max-width: 95%;
+        max-height: 85%;
+    }
+}
+
+        /* Estilos adicionales para la página de hobbies */
+        
+        .hobbies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+        
+        .hobby-card {
+            background-color: #FEF9F0;
+            border-radius: 20px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            border-bottom: 3px solid #c28f74;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+        }
+        
+        .hobby-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+        }
+        
+        .hobby-header {
+            padding: 20px 20px 10px 20px;
+            border-bottom: 1px solid #E6DFD3;
+        }
+        
+        .hobby-header h3 {
+            margin: 0;
+            font-size: 1.3rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .hobby-body {
+            padding: 20px;
+        }
+        
+        .hobby-body p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        
+        .hobby-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 15px;
+        }
+        
+        .hobby-tag {
+            background-color: #E6DFD3;
+            color: #4A6FA5;
+            padding: 4px 12px;
+            border-radius: 50px;
+            font-size: 0.7rem;
+        }
+        
+        .hobby-img {
+            width: 100%;
+            height: 160px;
+            background-color: #E6DFD3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            overflow: hidden;
+        }
+        
+        .hobby-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .hobby-img img:hover {
+            transform: scale(1.02);
+        }
+        
+        .placeholder-img {
+            background-color: #E6DFD3;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #8A8A8A;
+            font-size: 2rem;
+        }
+        
+        /* Sección de ideas futuras */
+        .future-ideas {
+            background: linear-gradient(135deg, #FEF9F0 0%, #FFFFFF 100%);
+            border-radius: 20px;
+            padding: 25px;
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .future-ideas h3 {
+            margin-bottom: 15px;
+        }
+        
+        .future-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .future-item {
+            background-color: white;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            color: #4A6FA5;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+            transition: all 0.2s ease;
+        }
+        
+        .future-item:hover {
+            background-color: #D4A58C;
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        /* Frase personal */
+        .hobby-quote {
+            text-align: center;
+            padding: 25px;
+            background-color: #FEF9F0;
+            border-radius: 20px;
+            margin: 30px 0;
+            font-style: italic;
+            color: #6B6B6B;
+        }
+        
+        @media (max-width: 600px) {
+            .hobbies-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .future-list {
+                gap: 10px;
+            }
+            
+            .future-item {
+                font-size: 0.75rem;
+                padding: 6px 14px;
             }
         }
