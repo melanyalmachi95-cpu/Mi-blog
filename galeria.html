@@ -53,7 +53,7 @@
                 <img src="imagenes/imagenes_paisajes_flores/002.jpeg" alt="Girasol">
                 <div class="galeria-info">
                     <p>Cuadro</p>
-                    <span>La Esación, 2026</span>
+                    <span>La Estación, 2026</span>
                 </div>
             </div>
             <div class="galeria-item">
@@ -514,6 +514,10 @@
                 </div>
             </div>
         </div>
+        <div id="lightbox" class="lightbox" onclick="cerrarLightbox()">
+            <span class="lightbox-cerrar" onclick="cerrarLightbox()">&times;</span>
+            <img class="lightbox-img" id="lightboxImg" src="" alt="">
+        </div>
     </div>
 
     <footer class="inicio">
@@ -530,5 +534,26 @@
             menuUl.classList.toggle('mostrar');
         });
     }
+    // Selecciona automáticamente todas las imágenes que deben ser clickeables
+    const imagenesClickeables = document.querySelectorAll('.mas-sub-1 img, .subclass img, .galeria-item img');
+    
+    imagenesClickeables.forEach(img => {
+        img.style.cursor = 'pointer';
+        img.addEventListener('click', function() {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightboxImg');
+            lightboxImg.src = this.src;
+            lightbox.classList.add('mostrar');
+        });
+    });
+    
+    function cerrarLightbox() {
+        const lightbox = document.getElementById('lightbox');
+        lightbox.classList.remove('mostrar');
+    }
+    
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') cerrarLightbox();
+    });
 </script>
 </html>

@@ -1,37 +1,190 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Espacio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Mis Proyectos - Anthony</title>
     <link rel="stylesheet" href="estilos_principales.css">
-    <link rel="stylesheet" href="index.html ">
-    <link rel="stylesheet" href="estilos_secundarios.css">
 </head>
 <body>
-    <h1 class="inicio">Proyectos</h1>
+    <h1 class="inicio">Mis Proyectos</h1>
     
-    <div class = "menu">
+    <div class="menu">
         <button class="menu-toggle" id="menuToggle">☰</button>
         <ul id="menuUl">
-            <li> <a href="index.html">Inicio</a></li>
-            <li> <a href="fotografias.html">Fotografias</a></li>
-            <li> <a href="redes.html">Redes Sociales</a></li>
-            <li> <a href="estudios.html">Mis Estudios</a></li>
-            <li> <a href="hobbies.html">Mis Hobbies</a></li>
-            <li> <a href="Poemas.html">Poemas</a></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="poemas.html">Escritos</a></li>
+            <li><a href="fotografias.html">Fotografías</a></li>
+            <li><a href="redes.html">Redes Sociales</a></li>
+            <li><a href="estudios.html">Mis Estudios</a></li>
+            <li><a href="hobbies.html">Mis Hobbies</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
         </ul>
     </div>
-</body>
-<script>
-    // Menú hamburguesa para móvil
-    const toggle = document.querySelector('.menu-toggle');
-    const menuUl = document.querySelector('.menu ul');
+
+    <div class="contenido">
+        <p>Aquí comparto algunos de los proyectos en los que he trabajado. No todos son perfectos, pero cada uno representa un aprendizaje y un paso adelante. Desde hardware hasta apps publicadas, esto es parte de mi camino en la tecnología.</p>
+        
+        <br>
+        <hr>
+        <br>
+
+        <!-- PROYECTO 1: SEGUIDOR DE LÍNEAS -->
+        <h2 class="secciones">Seguidor de líneas</h2>
+        <br>
+        <div class="mas-sub" style="max-width: 100%; margin-bottom: 30px;">
+            <p><strong>Robótica · ESPE Latacunga</strong></p>
+            <p>Mi primer proyecto universitario. Un robot autónomo capaz de seguir una línea negra sobre fondo blanco utilizando sensores infrarrojos. Participé con este proyecto en la Universidad de las Fuerzas Armadas (ESPE) en Latacunga. No fue el mejor, pero fue mi primer acercamiento real a la robótica y aprendí muchísimo sobre electrónica, programación de Arduino y trabajo bajo presión.</p>
+            <div class="mas-titulo-1" style="margin-left: 0;">
+            </div>
+        </div>
+
+        <!-- PROYECTO 2: ENCENDIDO POR HUELLA DIGITAL -->
+        <h2 class="secciones">Encendido de auto por huella digital</h2>
+        <br>
+        <div class="mas-sub" style="max-width: 100%; margin-bottom: 30px;">
+            <p><strong>Seguridad automotriz · Hardware</strong></p>
+            <p>Sistema de encendido vehicular controlado por huella digital mediante sensor capacitivo. Este circuito integra protección contra puenteos de encendido (ignición forzada) y controla sensores críticos como CKP (sensores de posición del cigüeñal), inyectores, bomba de gasolina y alimentación de la ECU. Solo la huella autorizada permite el arranque del vehículo.</p>
+            <br>
+            <div class="mas-titulo-1" style="margin-left: 0;">
+                <div class="mas-sub-1" style="max-width: 100%;">
+                    <div class="subclass">
+                        <img src="imagenes/Schematic_Autotouch_2026-06-09.png" alt="huella">
+                        <p style="text-align: center; font-size: 0.75rem; margin-top: 8px;">Esquema completo del sistema</p>
+                    </div>
+                </div>
+                <div class="mas-sub-1" style="max-width: 100%;">
+                    <div class="subclass">
+                        <img src="imagenes/Captura de pantalla_9-6-2026_213059_easyeda.com.jpeg" alt="circuito">
+                        <p style="text-align: center; font-size: 0.75rem; margin-top: 8px;">Circuito y sensores instalados</p>
+                    </div>
+                </div>
+                <div class="mas-sub-1" style="max-width: 100%;">
+                    <div class="subclass">
+                        <img src="imagenes/Photo-View_2026-06-09.svg" alt="prueba">
+                        <p style="text-align: center; font-size: 0.75rem; margin-top: 8px;">Pruebas del sistema</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PROYECTO 3: BloqueApp -->
+        <h2 class="secciones">BloqueApp</h2>
+        <br>
+        <div class="mas-sub" style="max-width: 100%; margin-bottom: 30px;">
+            <p><strong>Google Play · Productividad</strong></p>
+            <p>Aplicación publicada en Google Play que permite controlar el uso de aplicaciones. Bloquea apps seleccionadas en horarios específicos, y para desbloquearlas es necesario resolver ejercicios matemáticos. Además, incluye monitoreo de cuántas veces se intentó abrir cada app bloqueada y estadísticas de uso. Ideal para mejorar la concentración y evitar distracciones.</p>
+            <br>
+            <div class="mas-titulo-1" style="margin-left: 0;">
+                <div class="mas-sub-1" style="max-width: 100%;">
+                    <div class="subclass">
+                        <img src="imagenes/pantalla-bloqueapp.jpeg" alt="bloqueapp">
+                        <p style="text-align: center; font-size: 0.75rem; margin-top: 8px;">Pantalla de bloqueo</p>
+                    </div>
+                </div>
+                <div class="mas-sub-1" style="max-width: 100%;">
+                    <div class="subclass">
+                        <img src="imagenes/bloqueapp.jpeg" alt="estadísticas">
+                        <p style="text-align: center; font-size: 0.75rem; margin-top: 8px;">Estadísticas de uso</p>
+                    </div>
+                </div>
+                <div class="mas-sub-1" style="max-width: 100%;">
+                    <div class="subclass">
+                        <img src="imagenes/blo.png" alt="ejercicios">
+                        <p style="text-align: center; font-size: 0.75rem; margin-top: 8px;">Ejercicios matemáticos</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <a href="#" style="display: inline-block; background-color: #4A6FA5; color: white; padding: 10px 20px; border-radius: 30px; font-size: 0.85rem; text-decoration: none;">Ver en Google Play (proximamente)</a>
+        </div>
+
+        <!-- PROYECTO 4: GuiaEscan -->
+        <h2 class="secciones">GuiaEscan</h2>
+        <br>
+        <div class="mas-sub" style="max-width: 100%; margin-bottom: 30px;">
+            <p><strong>Turismo · Android</strong></p>
+            <p>Guía turística interactiva de Ecuador. La app detecta cuando te encuentras cerca de un lugar turístico registrado en su base de datos (como la Mitad del Mundo, cascadas, lagunas, etc.) y te envía una notificación para que lo visites. Incluye incentivos indígenas (información cultural y descuentos en comunidades) y permite tomar una fotografía del lugar para guardarla como recuerdo dentro de la app.</p>
+            <br>
+            <div class="mas-titulo-1" style="margin-left: 0;">
+                <div class="mas-sub-1" style="max-width: 100%;">
+                    <div class="subclass">
+                        <img src="imagenes/guia.png" alt="guiaescan">
+                        <p style="text-align: center; font-size: 0.75rem; margin-top: 8px;">Detección de lugares cercanos</p>
+                    </div>
+                </div>
+                <div class="mas-sub-1" style="max-width: 100%;">
+                    <div class="subclass">
+                        <img src="imagenes/pantalla-guia.jpeg" alt="fotografía del lugar">
+                        <p style="text-align: center; font-size: 0.75rem; margin-top: 8px;">Guardando recuerdos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PROYECTO 5: Aula Virtual -->
+        <h2 class="secciones">Aula Virtual</h2>
+        <br>
+        <div class="mas-sub" style="max-width: 100%; margin-bottom: 30px;">
+            <p><strong>Educacion · Gestion escolar</strong></p>
+            <p>Plataforma de aula virtual diseñada para la gestión de deberes y tareas escolares. Permite a los profesores asignar trabajos, fechas de entrega y recursos educativos, y a los estudiantes visualizar sus tareas pendientes, entregar trabajos y recibir calificaciones. Un proyecto enfocado en facilitar la comunicación académica.</p>
+            <br>
+            <div class="mas-titulo-1" style="margin-left: 0;">
+                <div class="mas-sub-1" style="max-width: 100%;">
+                    <div class="subclass">
+                        <img src="imagenes/pantalla-profe.png" alt="logindel aula" onclick="abrirLightbox(this)">
+                        <p style="text-align: center; font-size: 0.75rem; margin-top: 8px;">Panel del profesor</p>
+                    </div>
+                </div>
+                <div class="mas-sub-1" style="max-width: 100%;">
+                    <div class="subclass">
+                        <img src="imagenes/aula-login.png" alt="logindel aula">
+                        <p style="text-align: center; font-size: 0.75rem; margin-top: 8px;">Login</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="lightbox" class="lightbox" onclick="cerrarLightbox()">
+            <span class="lightbox-cerrar" onclick="cerrarLightbox()">&times;</span>
+            <img class="lightbox-img" id="lightboxImg" src="" alt="">
+        </div>
+    </div>
+
+    <footer class="inicio">
+        <p>© 2026 Anthony Simbaña. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Menu hamburguesa
+        const menuToggle = document.getElementById('menuToggle');
+        const menuUl = document.getElementById('menuUl');
+        
+        if (menuToggle && menuUl) {
+            menuToggle.addEventListener('click', function() {
+                menuUl.classList.toggle('mostrar');
+            });
+        }
+       // Selecciona automáticamente todas las imágenes que deben ser clickeables
+    const imagenesClickeables = document.querySelectorAll('.mas-sub-1 img, .subclass img, .galeria-item img');
     
-    if (toggle) {
-        toggle.addEventListener('click', function() {
-            menuUl.classList.toggle('mostrar');
+    imagenesClickeables.forEach(img => {
+        img.style.cursor = 'pointer';
+        img.addEventListener('click', function() {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightboxImg');
+            lightboxImg.src = this.src;
+            lightbox.classList.add('mostrar');
         });
+    });
+    
+    function cerrarLightbox() {
+        const lightbox = document.getElementById('lightbox');
+        lightbox.classList.remove('mostrar');
     }
-</script>
+    
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') cerrarLightbox();
+    });
+    </script>
+</body>
 </html>

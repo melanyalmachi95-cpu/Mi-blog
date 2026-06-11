@@ -1,37 +1,211 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Espacio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Mis Hobbies - Anthony</title>
     <link rel="stylesheet" href="estilos_principales.css">
-    <link rel="stylesheet" href="index.html ">
-    <link rel="stylesheet" href="estilos_secundarios.css">
 </head>
 <body>
     <h1 class="inicio">Mis Hobbies</h1>
-
-    <div class = "menu">
+    
+    <div class="menu">
         <button class="menu-toggle" id="menuToggle">☰</button>
         <ul id="menuUl">
-            <li> <a href="index.html">Inicio</a></li>
-            <li> <a href="fotografias.html">Fotografias</a></li>
-            <li> <a href="redes.html">Redes Sociales</a></li>
-            <li> <a href="estudios.html">Mis Estudios</a></li>
-            <li> <a href="poemas.html">Poemas</a></li>
-            <li> <a href="proyectos.html">Proyectos</a></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="poemas.html">Escritos</a></li>
+            <li><a href="fotografias.html">Fotografías</a></li>
+            <li><a href="redes.html">Redes Sociales</a></li>
+            <li><a href="estudios.html">Mis Estudios</a></li>
+            <li><a href="hobbies.html">Mis Hobbies</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
         </ul>
     </div>
-</body>
-<script>
-    // Menú hamburguesa para móvil
-    const toggle = document.querySelector('.menu-toggle');
-    const menuUl = document.querySelector('.menu ul');
+
+    <div class="contenido">
+        <p>Aquí comparto las cosas que me hacen feliz en mi tiempo libre. Algunos son pasiones de toda la vida, otros las he descubierto poco a poco. Lo importante es que cada uno me ayuda a crecer, relajarme o simplemente disfrutar el momento.</p>
+        
+        <br>
+        <hr>
+        <br>
+
+        <div class="hobbies-grid">
+            
+            <!-- Hobby 1: ESCRIBIR POEMAS Y CARTAS -->
+            <div class="hobby-card">
+                <div class="hobby-body">
+                    <div class="hobby-img">
+                        <div class="placeholder-img">
+                            <img src="imagenes/Nueva carpeta/WhatsApp Image 2026-06-10 at 19.20.56 (1).jpeg" alt="escribir" class="imagen1">
+                        </div>
+                    </div>
+                    <h3>Escribir poemas y cartas</h3>
+                    <p>Escribir es mi forma de ordenar el corazón. Poemas para Katherin, cartas que nunca entrego, pensamientos que necesitan salir. No soy poeta, pero escribo lo que siento.</p>
+                    <div class="hobby-tags">
+                        <span class="hobby-tag">Poesía</span>
+                        <span class="hobby-tag">Cartas</span>
+                        <span class="hobby-tag">Sentimientos</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Hobby 2: VIDEOS DE TECNOLOGÍA -->
+            <div class="hobby-card">
+                <div class="hobby-body">
+                    <div class="hobby-img">
+                        <div class="placeholder-img">
+                            <img src="imagenes/Nueva carpeta/v.png" alt="tecnología" class="imagen1">
+                        </div>
+                    </div>
+                    <h3>Videos de tecnología</h3>
+                    <p>Me encanta aprender viendo canales como <strong>Neta Gentile Sfx Sow</strong>, <strong>Veritasium</strong> y otros. Desde cómo funcionan los procesadores hasta física aplicada. Nunca dejo de aprender.</p>
+                    <div class="hobby-tags">
+                        <span class="hobby-tag">Neta Gentile</span>
+                        <span class="hobby-tag">Veritasium</span>
+                        <span class="hobby-tag">Curiosidad</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Hobby 3: VIDEOJUEGOS (War Thunder + Metro) -->
+            <div class="hobby-card">
+                <div class="hobby-body">
+                    <div class="hobby-img">
+                        <div class="placeholder-img">
+                            <img src="imagenes/nueva carpeta/286690_38.jpg" alt="videojuegos" class="imagen1">
+                        </div>
+                    </div>
+                    <h3>Videojuegos</h3>
+                    <p><strong>War Thunder:</strong> La adrenalina de los combates aéreos y terrestres. <strong>Metro saga:</strong> Una obra maestra de inmersión y narrativa. Esperando Metro 2039 con ansias.</p>
+                    <div class="hobby-tags">
+                        <span class="hobby-tag">War Thunder</span>
+                        <span class="hobby-tag">Metro Saga</span>
+                        <span class="hobby-tag">PC Gaming</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Hobby 4: FOTOGRAFÍA -->
+            <div class="hobby-card">
+                <div class="hobby-body">
+                    <div class="hobby-img">
+                        <div class="placeholder-img">
+                            <img src="imagenes/nueva carpeta/WhatsApp Image 2026-06-10 at 19.20.56.jpeg" alt="fotografía" class="imagen1" id="lightbox" onclick="abrirLightbox(this)">
+                        </div>
+                    </div>
+                    <h3>📷 Fotografía</h3>
+                    <p>Me gusta capturar momentos espontáneos, paisajes, flores y carros. No soy profesional, pero cada foto guarda un recuerdo o un sentimiento del momento.</p>
+                    <div class="hobby-tags">
+                        <span class="hobby-tag">Paisajes</span>
+                        <span class="hobby-tag">Flores</span>
+                        <span class="hobby-tag">Carros</span>
+                        <span class="hobby-tag">Momentos</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Hobby 5: MANEJAR -->
+            <div class="hobby-card">
+                <div class="hobby-body">
+                    <div class="hobby-img">
+                        <div class="placeholder-img">
+                            <img src="imagenes/manejar.webp" alt="manejar" class="imagen1" id="lightbox" onclick="abrirLightbox(this)">
+                        </div>
+                    </div>
+                    <h3>Manejar</h3>
+                    <p>Sentir el volante, la carretera, la libertad. Manejar es mi escape, mi momento de paz. Me encanta recorrer lugares nuevos y sentir el viento en el camino.</p>
+                    <div class="hobby-tags">
+                        <span class="hobby-tag">Carretera</span>
+                        <span class="hobby-tag">Libertad</span>
+                        <span class="hobby-tag">Aventura</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Hobby 6: ESPACIO PARA NUEVO HOBBY (expandible) -->
+            <div class="hobby-card">
+                <div class="hobby-body">
+                    <div class="hobby-img">
+                        <div class="placeholder-img">
+                            ➕
+                        </div>
+                    </div>
+                    <h3>Próximamente...</h3>
+                    <p>Aquí irá un nuevo hobby que descubra. La vida es larga y siempre hay algo nuevo por aprender o disfrutar.</p>
+                    <div class="hobby-tags">
+                        <span class="hobby-tag">En desarrollo</span>
+                        <span class="hobby-tag">Pronto más</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ideas de hobbies que quisiera probar -->
+        <div class="future-ideas">
+            <h3>Cosas que quisiera probar</h3>
+            <p>Hobbies que tengo en mente para el futuro, cuando tenga tiempo o valor para empezarlos.</p>
+            <div class="future-list">
+                <span class="future-item">📖 Leer más seguido</span>
+                <span class="future-item">🏃‍♂️ Hacer ejercicio</span>
+                <span class="future-item">🌍 Viajar por el Mundo</span>
+                <span class="future-item">🎹 Aprender piano y violin</span>
+                <span class="future-item">🧠 Aprender otro idioma</span>
+                <span class="future-item">✈️ Aprender a volar un avión</span>
+            </div>
+            </div>
+        </div>
+
+        <!-- Frase personal -->
+        <div class="hobby-quote">
+            <p>"No necesito ser el mejor en lo que hago. Solo necesito disfrutarlo. Eso es un hobby de verdad."</p>
+            <span style="font-size: 0.8rem; color: #c28f74;">— Anthony S.</span>
+        </div>
+
+        <!-- Separador y nota final -->
+        <hr>
+        <br>
+        <p style="text-align: center; font-size: 0.85rem; color: #6B6B6B;">Iré agregando más fotos y detalles a cada hobby con el tiempo. Este espacio crece conmigo.</p>
+                <div id="lightbox" class="lightbox" onclick="cerrarLightbox()">
+            <span class="lightbox-cerrar" onclick="cerrarLightbox()">&times;</span>
+            <img class="lightbox-img" id="lightboxImg" src="" alt="">
+        </div>
+    </div>
+
+    <footer class="inicio">
+        <p>© 2026 Anthony Simbaña. Todos los derechos reservados.</p>
+    </footer>
+    <script>
+        // Menú hamburguesa
+        const menuToggle = document.getElementById('menuToggle');
+        const menuUl = document.getElementById('menuUl');
+        
+        if (menuToggle && menuUl) {
+            menuToggle.addEventListener('click', function() {
+                menuUl.classList.toggle('mostrar');
+            });
+        }
+        
+        // Lightbox para imágenes
+    const imagenesClickeables = document.querySelectorAll('.hobby-img, .placeholder-img, .hobby-body, .hobby-card, .imagen1');
     
-    if (toggle) {
-        toggle.addEventListener('click', function() {
-            menuUl.classList.toggle('mostrar');
+    imagenesClickeables.forEach(img => {
+        img.style.cursor = 'pointer';
+        img.addEventListener('click', function() {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightboxImg');
+            lightboxImg.src = this.src;
+            lightbox.classList.add('mostrar');
         });
+    });
+    
+    function cerrarLightbox() {
+        const lightbox = document.getElementById('lightbox');
+        lightbox.classList.remove('mostrar');
     }
-</script>
+    
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') cerrarLightbox();
+    });
+    </script>
+</body>
 </html>
