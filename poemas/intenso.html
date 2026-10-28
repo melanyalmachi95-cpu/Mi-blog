@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intenso - Anthony</title>
+    <link rel="stylesheet" href="../estilos_principales.css">
+    <link rel="stylesheet" href="../estilos_secundarios.css">
+</head>
+<body>
+    <h1 class="inicio">Mi Espacio</h1>
+    
+    <div class="menu">
+        <button class="menu-toggle" id="menuToggle">☰</button>
+        <ul id="menuUl">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../poemas.html">Escritos</a></li>
+            <li><a href="../fotografias.html">Fotografías</a></li>
+            <li><a href="../redes.html">Redes Sociales</a></li>
+            <li><a href="../estudios.html">Mis Estudios</a></li>
+            <li><a href="../hobbies.html">Mis Hobbies</a></li>
+            <li><a href="../proyectos.html">Proyectos</a></li>
+        </ul>
+    </div>
+
+    <div class="contenido">
+        <!-- Botón para volver atrás -->
+        <div class="volver">
+            <a href="../poemas.html" class="btn-volver">← Volver a los escritos</a>
+        </div>
+
+        <!-- Título del poema -->
+        <h1 class="titulo-poema">Intenso</h1>
+        <p class="fecha-poema">Ecuador, 2026</p>
+
+        <!-- Poema completo -->
+        <div class="poema-completo">
+            <p>Sé que a veces soy intenso.</p>
+            <p>Te mando poemas, videos, canciones.</p>
+            <p>Te digo "mi amor" cada noche</p>
+            <p>y también cada mañana.</p>
+            <br>
+            <p>Pero es que no puedo evitarlo.</p>
+            <p>Me acuerdo de ti cuando cierro los ojos.</p>
+            <p>Deseo ver las estrellas junto a ti.</p>
+            <p>Y en el día, basta tu presencia</p>
+            <p>para que todo sea mágico.</p>
+            <br>
+            <p>Quizás soy demasiado.</p>
+            <p>Pero tú te mereces la atención del mundo entero.</p>
+            <p>Y yo solo quiero dártela,</p>
+            <p>una y otra vez,</p>
+            <p>hasta el último de mis días.</p>
+            <br>
+            <p>Quiero amarte toda la vida.</p>
+            <p>Escribirte poemas infinitos.</p>
+            <p>Darte detalles siempre.</p>
+            <br>
+            <p>Así que si soy intenso,</p>
+            <p>que así sea.</p>
+            <p>Porque tú, Ka</p>
+            <p>lo vales todo.</p>
+            <p>Y yo nací para quererte así.</p>
+            <p>Sin medida.</p>
+            <p>Sin freno.</p>
+            <p>Para toda la eternidad.</p>
+            <p>"Te amo"</p>
+            <br>
+            <p>— Anthony. S</p>
+        </div>
+
+        <!-- Separador bonito -->
+        <hr class="separador-poema">
+
+        <!-- Navegación entre poemas (opcional) -->
+        <div class="navegacion-poemas">
+            <a href="brilla.html" class="nav-anterior">← Anterior</a>
+            <a href="../poemas.html" class="nav-todos">Todos los poemas</a>
+            <a href="el_tiempo.html" class="nav-siguiente">Siguiente →</a>
+        </div>
+    </div>
+
+    <footer class="inicio">
+        <p>© 2026 Anthony Simbaña. Todos los derechos reservados.</p>
+    </footer>
+</body>
+<script>
+    // Menú hamburguesa para móvil
+    const toggle = document.querySelector('.menu-toggle');
+    const menuUl = document.querySelector('.menu ul');
+    
+    if (toggle) {
+        toggle.addEventListener('click', function() {
+            menuUl.classList.toggle('mostrar');
+        });
+    }
+</script>
+</html>

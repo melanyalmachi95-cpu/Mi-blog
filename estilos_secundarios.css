@@ -1,0 +1,146 @@
+/* Estilos exclusivos de estudios.html */
+.contenido .academic-header {
+    padding: clamp(24px, 4vw, 42px);
+    color: var(--texto-principal);
+    background: linear-gradient(135deg, rgba(231, 161, 139, 0.13), rgba(255, 255, 255, 0.035));
+    border: 1px solid var(--borde-cristal);
+    border-radius: 22px;
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.18);
+}
+
+.contenido .academic-header h2 {
+    color: var(--texto-principal);
+}
+
+.contenido .academic-header p,
+.contenido .future-vision-intro {
+    color: var(--texto-suave);
+}
+
+.contenido .goal-card,
+.contenido .timeline-content,
+.contenido .future-vision,
+.contenido .future-item,
+.contenido .featured-course {
+    color: var(--texto-principal);
+    background: var(--panel-claro);
+    border: 1px solid var(--borde-cristal);
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.14);
+}
+
+.contenido .goal-card {
+    padding: 24px;
+    border-left: 3px solid var(--acento);
+}
+
+.contenido .goal-card h3,
+.contenido .timeline-content h3,
+.contenido .future-item h4,
+.contenido .featured-course h3 {
+    color: var(--texto-principal);
+}
+
+.contenido .goal-card p,
+.contenido .timeline-content p,
+.contenido .future-item p,
+.contenido .featured-course > p {
+    color: var(--texto-suave);
+}
+
+.contenido .goal-icon img {
+    width: 88px;
+    height: 88px;
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.94);
+    border-radius: 18px;
+}
+
+.contenido .timeline::before {
+    background: linear-gradient(180deg, var(--acento), rgba(231, 161, 139, 0.18));
+}
+
+.contenido .timeline-icon {
+    color: var(--texto-principal);
+    background: #19384a;
+    border: 1px solid var(--borde-cristal);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.24);
+}
+
+.contenido .timeline-content {
+    border-left: 3px solid var(--acento);
+}
+
+.contenido .timeline-date {
+    color: var(--acento);
+}
+
+.contenido .future-vision {
+    border-top: 3px solid var(--acento);
+    border-bottom: 1px solid var(--borde-cristal);
+}
+
+.contenido .future-item {
+    min-width: 180px;
+    padding: 20px;
+}
+
+.contenido .future-item h4 {
+    margin-top: 8px;
+}
+
+.contenido .future-icon img {
+    width: 72px;
+    height: 72px;
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.94);
+    border-radius: 18px;
+}
+
+.contenido .sueño {
+    color: var(--acento);
+}
+
+.contenido .lang {
+    color: var(--texto-principal);
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid var(--borde-cristal);
+}
+
+.contenido .lang:hover {
+    color: #18212a;
+    background: var(--acento);
+}
+
+.contenido .featured-course {
+    padding: 24px;
+}
+
+.contenido .featured-course .imagen {
+    flex: 0 0 32px;
+    align-self: center;
+}
+
+.contenido .featured-course > p:last-child {
+    color: var(--texto-suave) !important;
+}
+
+.contenido .progress-bar {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.contenido .progress-fill {
+    background: linear-gradient(90deg, var(--acento), #ffd0be);
+}
+
+@media (max-width: 600px) {
+    .contenido .goal-card,
+    .contenido .future-item,
+    .contenido .featured-course {
+        padding: 18px;
+    }
+
+    .contenido .future-items {
+        gap: 12px;
+    }
+}
